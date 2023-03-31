@@ -63,70 +63,66 @@ while(a==1){
     delay(200);
     }
 
-  switch(p){
-  case (1):
-  Serial.println("");
-  Serial.println(p0.nombre);
-  Serial.print("El precio por unidad es Q"); 
-  Serial.println(p0.precio);
-  Serial.print("En reserva hay "); 
-  Serial.print(p0.reserva); 
-  Serial.println(" unidades.");
-  Serial.print("En stock hay ");
-  Serial.print(p0.stock); 
-  Serial.println(" unidades.");
-  Serial.print("El precio del lote es de Q"); 
-  Serial.println(p0.precio * p0.stock);
-  a=0;
- break;
+  if(p==1){
+    Serial.println("");
+    Serial.println(p0.nombre);
+    Serial.print("El precio por unidad es Q"); 
+    Serial.println(p0.precio);
+    Serial.print("En reserva hay "); 
+    Serial.print(p0.reserva); 
+    Serial.println(" unidades.");
+    Serial.print("En stock hay ");
+    Serial.print(p0.stock); 
+    Serial.println(" unidades.");
+    Serial.print("El precio del lote es de Q"); 
+    Serial.println(p0.precio * p0.stock);
+    a=0;
+    }
+  if(p==2){
+    Serial.println("");
+    Serial.println(p1.nombre);
+    Serial.print("El precio por unidad es Q"); 
+    Serial.println(p1.precio);
+    Serial.print("En reserva hay "); 
+    Serial.print(p1.reserva); 
+    Serial.println(" unidades.");
+    Serial.print("En stock hay ");
+    Serial.print(p1.stock); 
+    Serial.println(" unidades.");
+    Serial.print("El precio del lote es de Q"); 
+    Serial.println(p1.precio * p1.stock);
+    a=0;
+    }
 
- case (2):
-  Serial.println("");
-  Serial.println(p1.nombre);
-  Serial.print("El precio por unidad es Q"); 
-  Serial.println(p1.precio);
-  Serial.print("En reserva hay "); 
-  Serial.print(p1.reserva); 
-  Serial.println(" unidades.");
-  Serial.print("En stock hay ");
-  Serial.print(p1.stock); 
-  Serial.println(" unidades.");
-  Serial.print("El precio del lote es de Q"); 
-  Serial.println(p1.precio * p1.stock);
-  a=0;
- break;
-
- case (3):
-  Serial.println("");
-  Serial.println(p2.nombre);
-  Serial.print("El precio por unidad es Q"); 
-  Serial.println(p2.precio);
-  Serial.print("En reserva hay "); 
-  Serial.print(p2.reserva); 
-  Serial.println(" unidades.");
-  Serial.print("En stock hay ");
-  Serial.print(p2.stock); 
-  Serial.println(" unidades.");
-  Serial.print("El precio del lote es de Q"); 
-  Serial.println(p2.precio * p2.stock);
-  a=0;
- break;
-
- case (4):
-  Serial.println("");
-  Serial.println(p3.nombre);
-  Serial.print("El precio por unidad es Q"); 
-  Serial.println(p3.precio);
-  Serial.print("En reserva hay "); 
-  Serial.print(p3.reserva); 
-  Serial.println(" unidades.");
-  Serial.print("En stock hay ");
-  Serial.print(p3.stock); 
-  Serial.println(" unidades.");
-  Serial.print("El precio del lote es de Q"); 
-  Serial.println(p3.precio * p3.stock);
-  a=0;
- break;
-}
+  if(p==3){
+    Serial.println("");
+    Serial.println(p2.nombre);
+    Serial.print("El precio por unidad es Q"); 
+    Serial.println(p2.precio);
+    Serial.print("En reserva hay "); 
+    Serial.print(p2.reserva); 
+    Serial.println(" unidades.");
+    Serial.print("En stock hay ");
+    Serial.print(p2.stock); 
+    Serial.println(" unidades.");
+    Serial.print("El precio del lote es de Q"); 
+    Serial.println(p2.precio * p2.stock);
+    a=0;
+  }
+  if(p==4){
+    Serial.println("");
+    Serial.println(p3.nombre);
+    Serial.print("El precio por unidad es Q"); 
+    Serial.println(p3.precio);
+    Serial.print("En reserva hay "); 
+    Serial.print(p3.reserva); 
+    Serial.println(" unidades.");
+    Serial.print("En stock hay ");
+    Serial.print(p3.stock); 
+    Serial.println(" unidades.");
+    Serial.print("El precio del lote es de Q"); 
+    Serial.println(p3.precio * p3.stock);
+    a=0;
+  }
 }
 }
