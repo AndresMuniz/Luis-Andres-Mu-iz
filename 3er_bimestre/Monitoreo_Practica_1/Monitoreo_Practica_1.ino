@@ -30,8 +30,8 @@ OneWire ourWire(3);                //Se establece el pin 2  como bus OneWire
 DallasTemperature sensors(&ourWire); //Se declara una variable u objeto para nuestro sensor
 
 //Constructores Ticker
-Ticker accion_boton(funcion_boton, 2000); //cada 6 segundos se comprobara el estado del boton
-Ticker accion_sensors(funcion_sensors, 2000); //cada 6 segundos se comprobara el estado del boton
+Ticker accion_boton(funcion_boton, 6000); //cada 6 segundos se comprobara el estado del boton
+Ticker accion_sensors(funcion_sensors, 3000); //cada 2 segundos se comprobara el estado del boton
 
 
 void setup() {
