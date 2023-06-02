@@ -55,9 +55,11 @@ void funcion_boton(void)
 {
   estado_boton = digitalRead(boton); //leo el estado digital
   if(estado_boton==HIGH){                     //imprimo cuando esta precionado del boton 
+    Serial.println(" ");
     Serial.println("Boton precionado");
   }
   if(estado_boton==LOW) {                     //imprimo cuando esta precionado del boton 
+    Serial.println(" ");
     Serial.println("Boton no precionado");
   }
 }
