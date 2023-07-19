@@ -6,7 +6,7 @@
 void fun_bluetooth();
 
 //constructores
-SoftwareSerial bluetooth(0,1);
+SoftwareSerial bluetooth(10,11); //pin RX y TX
 /* creamos los objetos para los servos*/
 Servo servo1;
 Servo servo2;
@@ -19,7 +19,7 @@ void setup() {
   servo1.attach(3);//le asignamos un pin al servo 1
   servo2.attach(5);//le asignamos un pin al servo 2
   servo3.attach(6);//le asignamos un pin al servo 3
-  servo3.attach(9);//le asignamos un pin al servo 4
+  servo4.attach(9);//le asignamos un pin al servo 4
 }
 
 void loop() {
@@ -59,7 +59,7 @@ void fun_bluetooth (){
   if (realservo >= 4000 && realservo < 4180){
     int servomap4 = realservo;
     servomap4 = map(servomap4, 4000,4180,0,180);
-    servo3.write(servomap4);
+    servo4.write(servomap4);
     Serial.println("Servo 4 ON"); 
   }
 }

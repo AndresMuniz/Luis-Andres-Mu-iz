@@ -170,5 +170,5 @@ void loop() {
       matriz.setRow(0,i,vertical1[i]);
     }
   }
-  delay(10);
+  delay(0);
 }
